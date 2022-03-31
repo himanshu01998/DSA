@@ -14,15 +14,19 @@ class BinarySearchTree:
 
     def add_child(self, data):
         if data == self.data:
-            return
+            return       # Node already exists
 
         if data < self.data:
+            # data is less than current node so add it to left side 
             if self.left:
+                # if left node is not empty call recursive method and finally set left node = data
                 self.left.add_child(data)
             else:
                 self.left = BinarySearchTree(data)
         else:
+            # data is greater than current node so add it to right side
             if self.right:
+                # if right node is not empty call recursive method and finally set right node = data
                 self.right.add_child(data)
             else:
                 self.right = BinarySearchTree(data)
@@ -60,6 +64,21 @@ class BinarySearchTree:
 
         return elements
 
+    def search(self, val):
+        if self.data == val:
+            return True
+
+        if val < self.data:
+            if self.left:
+                return self.left.search(val)
+            else:
+                return False
+
+        if val > self.data:
+            if self.right:
+                return self.right.search(val)
+            else:
+                return False
 
     def find_min(self):
         if self.left is None:
