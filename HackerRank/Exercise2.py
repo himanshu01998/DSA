@@ -1,4 +1,4 @@
-# Forming a Magic Square - HackerRank Problem Sovling Exercise.
+# Forming a Magic Square - HackerRank Problem Solving Exercise.
 
 
 def formingMagicSquare(s):

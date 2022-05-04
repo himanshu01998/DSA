@@ -112,3 +112,4 @@ if __name__ == '__main__':
     print(obj.find_min())
     print(obj.find_max())
     print(obj.calculate_sum())
+    

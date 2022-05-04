@@ -1,4 +1,4 @@
-# HackerRank - Day of the Programmer Exercise
+# HackerRank Problem Solving- Day of the Programmer Exercise
 
 def dayOfProgrammer(year):
     # Write your code here
